@@ -1,0 +1,40 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center; margin-bottom: 0;
+}
+
+h4 {
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.module {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  height: 15vh;
+  width: 20vw;
+  margin: 0;
+  background-color: #607D8B;
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.module:hover {
+  background-color: #EEE;
+  cursor: pointer;
+  color: #607d8b;
+  transform: scale(1.05);
+  box-shadow: 0px 1px 5px #808080;
+}

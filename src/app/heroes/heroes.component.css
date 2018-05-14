@@ -1,0 +1,86 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+.heroes li {
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin-top: .5em;
+  padding: .3em 0;
+  width: 16em;
+  height: 1.6em;
+  border-radius: 4px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  transition: all 0.5s;
+}
+
+.heroes li:hover {
+  background-color: #DDD;
+}
+
+.heroes li .hero {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.heroes li .hero .overflow-wrapper {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.5s;
+}
+
+.heroes li:hover .hero .overflow-wrapper {
+  width: 120px;
+}
+
+.heroes li a {
+  cursor: pointer;
+  color: #607D8B;
+  margin-right: .7em;
+  font-size: .8em;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.heroes li:hover a {
+  opacity: 1;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  font-size: 11pt;
+  width: 20px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+  float: left;
+  text-align: center;
+}

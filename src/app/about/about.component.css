@@ -1,0 +1,8 @@
+p {
+  width: 500px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+}
