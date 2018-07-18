@@ -1,0 +1,28 @@
+#search-component h4 {
+  margin: 0;
+}
+
+#search-box {
+  width: 250px;
+}
+
+.search-result {
+  width: 252px;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  transition: all 0.5s;
+}
+
+.search-result li {
+  padding: 5px;
+  background-color: #eee;
+  color: #607D8B;
+}
+
+.search-result li:hover {
+  color: #039be5;
+}
