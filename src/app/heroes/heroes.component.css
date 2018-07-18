@@ -60,11 +60,13 @@
   opacity: 0;
   white-space: nowrap;
   overflow: hidden;
+  pointer-events: none;
   transition: all 0.3s ease-in;
 }
 
 .heroes li:hover a {
   opacity: 1;
+  pointer-events: all;
 }
 
 .heroes .badge {
