@@ -1,7 +1,18 @@
 <h2>My Heroes</h2>
+<div>
+  <label>Hero name:
+    <input #heroName (keydown)="input($event, heroName.value); heroName.value=''" />
+  </label>
+  <button (click)="add(heroName.value); heroName.value=''">
+    add
+  </button>
+</div>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <span class="badge">{{hero.id}}</span><span class="hero"><span class="overflow-wrapper">{{hero.name}}</span>
-    <a routerLink="/detail/{{hero.id}}">view details »</a></span>
+    <span class="badge">{{hero.id}}</span>
+    <span class="hero">
+      <span class="overflow-wrapper">{{hero.name}}</span>
+      <a routerLink="/detail/{{hero.id}}">view details »</a>
+    </span>
   </li>
 </ul>

@@ -1,20 +1,17 @@
-button {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin: 10px 5px;
-  background-color: #eee;
-  color: #607D8B;
-  border: none;
-  border-radius: 4px;
+.delete {
+  all: unset;
+  color: #ffffff;
+  background-color: #d60000;
   font-size: 11pt;
+  border: none;
   outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  transition: all 0.2s;
 }
 
-button:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-
-button:active {
-  color: #039be5;
+.delete:hover {
+  background-color: #c40000;
 }

@@ -1,7 +1,7 @@
 nav a {
   padding: 5px 10px;
   text-decoration: none;
-  margin: 10px 5px;
+  margin: 0.5vw;
   background-color: #eee;
   color: #607D8B;
   border-radius: 4px;
@@ -14,4 +14,10 @@ nav a:hover {
 
 nav a:active {
   color: #039be5;
+}
+
+@media (max-width: 500px) {
+  nav {
+    font-size: 1.75vw;
+  }
 }
