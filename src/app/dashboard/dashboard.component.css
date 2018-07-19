@@ -17,29 +17,8 @@ h4 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "one two three four five";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 7.5px;
-}
-
-.module0 {
-  grid-area: one;
-}
-
-.module1 {
-  grid-area: two;
-}
-
-.module2 {
-  grid-area: three;
-}
-
-.module3 {
-  grid-area: four;
-}
-
-.module4 {
-  grid-area: five;
 }
 
 .module {
@@ -63,11 +42,10 @@ h4 {
   box-shadow: 0px 1px 5px #808080;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1.5fr;
-    grid-template-areas: "one two" "three four" "five five";
+    grid-template-rows: 1fr 1fr;
     grid-row-gap: 7.5px;
     grid-column-gap: 5px;
   }
@@ -75,7 +53,17 @@ h4 {
     height: 10vh;
     font-size: 9pt;
   }
-  .module4 .module {
-    height: 15vh;
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 7.5px;
+    grid-column-gap: 5px;
+  }
+  .module {
+    height: 10vh !important;
+    font-size: 9pt;
   }
 }
